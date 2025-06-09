@@ -1,4 +1,4 @@
-package com.vincentkammerer.ussd_service_example;
+package com.ktminnov.ussd_service_example;
 
 import io.flutter.embedding.android.FlutterActivity;
 

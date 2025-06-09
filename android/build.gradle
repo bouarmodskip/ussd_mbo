@@ -1,4 +1,4 @@
-group 'com.vincentkammerer.ussd_service'
+group 'com.ktminnov.ussd_service'
 version '1.0'
 
 buildscript {
@@ -22,11 +22,12 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 30
+    namespace "com.ktminnov.ussd_service"
+    compileSdkVersion 35
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
 
     defaultConfig {

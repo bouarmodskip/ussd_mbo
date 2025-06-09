@@ -48,6 +48,7 @@ class _MyAppState extends State<MyApp> {
     } on PlatformException catch (e) {
       setState(() {
         _requestState = RequestState.error;
+        // ignore: unnecessary_type_check
         _responseCode = e is PlatformException ? e.code : "";
         _responseMessage = e.message ?? '';
       });

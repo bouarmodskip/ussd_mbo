@@ -1,4 +1,4 @@
-package com.vincentkammerer.ussd_service;
+package com.ktminnov.ussd_service;
 
 import android.Manifest.permission;
 import android.content.Context;
@@ -18,7 +18,7 @@ import java.util.concurrent.CompletableFuture;
 
 public class UssdServicePlugin implements FlutterPlugin, MethodCallHandler {
 
-  private static String CHANNEL_NAME = "com.vincentkammerer.ussd_service/plugin_channel";
+  private static String CHANNEL_NAME = "com.ktminnov.ussd_service/plugin_channel";
   private static String MAKE_REQUEST_METHOD = "makeRequest";
   private Context context;
   private MethodChannel channel;

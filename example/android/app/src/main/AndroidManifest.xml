@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.vincentkammerer.ussd_service_example">
+    package="com.ktminnov.ussd_service_example">
     <uses-permission android:name="android.permission.CALL_PHONE" />
    <application
         android:label="ussd_service_example"
