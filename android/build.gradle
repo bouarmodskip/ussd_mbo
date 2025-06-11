@@ -2,13 +2,18 @@ group 'com.ktminnov.ussd_service'
 version '1.0'
 
 buildscript {
+    ext.kotlin_version = '1.9.0' // Or '1.9.22' for latest stable in 2024
     repositories {
         google()
         mavenCentral()
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:4.1.0'
+        // Update AGP to a modern version compatible with Flutter 3+ and Java 17
+        // For compileSdkVersion 35 and jvmTarget 17, you likely need AGP 7.3.0 or higher.
+        // A good modern default is 8.1.4 for Flutter 3.19+ projects.
+        classpath 'com.android.tools.build:gradle:8.1.4'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
 
@@ -20,21 +25,23 @@ rootProject.allprojects {
 }
 
 apply plugin: 'com.android.library'
+apply plugin: 'org.jetbrains.kotlin.android' // Add this line to apply the Kotlin plugin
 
 android {
     namespace "com.ktminnov.ussd_service"
-    compileSdkVersion 35
+    compileSdkVersion 35 // This is fine with updated AGP
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_17
-        targetCompatibility JavaVersion.VERSION_17
+        sourceCompatibility JavaVersion.VERSION_17 // This is fine
+        targetCompatibility JavaVersion.VERSION_17 // This is fine
     }
 
+    // With AGP 7.0.0+, kotlinOptions can indeed be directly under android {}
     kotlinOptions {
-        jvmTarget = '17'
+        jvmTarget = '17' // This is fine
     }
 
     defaultConfig {
-        minSdkVersion 26
+        minSdkVersion 26 // This is fine
     }
 }
