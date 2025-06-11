@@ -1,6 +1,6 @@
 name: ussd_service
 description: A Flutter plugin to make silent USSD requests and read their responses, using Android's sendUssdRequest. iOS is not supported.
-version: 0.1.1
+version: 1.0.0
 homepage: https://github.com/bouarmodskip/ussd_mbo.git
 documentation: https://github.com/bouarmodskip/ussd_mbo.git
 repository: https://github.com/bouarmodskip/ussd_mbo.git
