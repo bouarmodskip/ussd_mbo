@@ -2,9 +2,6 @@ import 'dart:async';
 
 import 'package:flutter/services.dart';
 
-/// Flutter plugin to access to access Android's sendUssdRequest method from a Flutter application.
-/// See the section for sendUssdRequest in https://developer.android.com/reference/android/telephony/TelephonyManager.html
-
 class UssdService {
   static const MethodChannel _channel =
       MethodChannel("com.ktminnov.ussd_service/plugin_channel");
