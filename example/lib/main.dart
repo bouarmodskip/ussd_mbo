@@ -90,8 +90,8 @@ class _MyAppState extends State<MyApp> {
                 ),
                 const SizedBox(height: 20),
                 if (_requestState == RequestState.ongoing)
-                  Row(
-                    children: const <Widget>[
+                  const Row(
+                    children: <Widget>[
                       SizedBox(
                         width: 24,
                         height: 24,

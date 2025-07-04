@@ -33,7 +33,6 @@ android {
 
     defaultConfig {
         minSdkVersion 26
-        // targetSdkVersion is implied by compileSdkVersion when using AGP 8+
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
